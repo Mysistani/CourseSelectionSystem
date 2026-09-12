@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CourseSelectionSystem.Models
 {
-    class Student :  Person
+    public class Course
     {
 
     }

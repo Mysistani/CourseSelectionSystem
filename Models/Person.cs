@@ -4,30 +4,30 @@ using System.Text;
 
 namespace CourseSelectionSystem.Models
 {
-    class Person
+    public class Person
     {
-        private string _name;
+        private string _name = string.Empty;
         private int _age;
         public string Name
         {
             get { return _name; }
-            private set { _name = Name; }
+            private set { _name = value; }
         }
         public int Age
         {
             get { return _age; }
-            private set { _age = Age; }
+            private set { _age = value; }
         }
         public Person(string name, int age)
         {
-            _age = age;
-            _name = name;
+            Age = age;
+            Name = name;
         }
 
         
         public virtual void info()
         {
-            Console.WriteLine($"{_name} has {_age} old");
+            Console.WriteLine($"{Name} has {Age} old");
         }
     }
 }
