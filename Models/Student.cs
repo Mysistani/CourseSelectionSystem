@@ -8,7 +8,7 @@ namespace CourseSelectionSystem.Models
     {
         private readonly List<Enrollment> _enrollments =
             new List<Enrollment>();
-    public IReadOnlyList<Enrollment> Enrollments { get { return _enrollments; }
+    public IReadOnlyList<Enrollment> Enrollments { get { return _enrollments; } }
     public Student(string name , int age ): base(name, age)
         { }
     public void AddCourse (Course course)
